@@ -1,0 +1,138 @@
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f9fafb;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* FEATURES SECTION */
+.features-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.features-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.features-subtitle {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 50px;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 30px 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+/* Navbar */
+.navbar {
+  position: static;
+  top: 0;
+  left: 0;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Container of logo elements */
+.nav-content {
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  gap: 10px; /* space between CS box and text */
+}
+
+/* Green rounded square with "CS" */
+.logo-icon {
+  background: #22c55e;           /* green background */
+  color: white;                  /* white text */
+  font-weight: 700;
+  font-size: 16px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;            /* rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* subtle shadow */
+  flex-shrink: 0;
+}
+
+/* "CareShare" text */
+.logo-text {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.nav-content nav a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-content nav a:hover {
+  color: #22c55e;
+}
+.feature-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.12);
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature-card h3 {
+  font-size: 20px;
+  color: #111827;
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+}
